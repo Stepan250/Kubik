@@ -17,6 +17,3 @@ for i in range(0, len(list) - 2, 2):
     if number_sum < list[i + 1]:
         list_3.append(list[i + 1])
 print(f"среднии числа которое больше суммы соседних {list_3}")
-
-
-print("hello")
