@@ -3,12 +3,11 @@ alphabet_upper = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З',
                   'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 
                   'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я']
 
-
 columns = 3
 letters_per_column = len(alphabet_upper) // columns
 
-for i in range(0, len(alphabet_upper), columns):
-    row = alphabet_upper[i:i + columns]
+for i in range(letters_per_column):
+    row = alphabet_upper[i::letters_per_column]
     row_lower = [letter.lower() for letter in row]
 
     print("^^^^^^^^^^^^^^^^^^^^^^^^^")
