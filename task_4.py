@@ -5,6 +5,7 @@ for j in prompt:
     secret_word = input("Угадай кодовое слово: ")
     if secret_word == word:
         print(f"Ты угадал кодовое слово: {word}!")
+        break
     else:
         if max_promts <= 4:
             print("Нет такого слова")
