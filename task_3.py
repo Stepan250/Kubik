@@ -14,3 +14,16 @@ for i in range(letters_per_column):
     print(f"{row[0] + " " + row_lower[0]:^6} || {row[1] + " " + row_lower[1]:^6} || {row[2] + " " + row_lower[2]:^6}")
 
 print("^^^^^^^^^^^^^^^^^^^^^^^^^")
+
+lion_art = """
+   .--.
+   |o_o |
+   |:_/ |
+  //   \\ \\
+ (|     | )
+/'\\_   _/`\\
+\\___)=(___/
+"""
+
+print(lion_art)
+

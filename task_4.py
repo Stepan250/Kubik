@@ -12,3 +12,4 @@ for j in prompt:
             print(f"подсказка: {j}")
             print("==================================")
             max_promts += 1
+
