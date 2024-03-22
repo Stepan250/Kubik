@@ -1,17 +1,28 @@
 def find_divisors(number):
     divisors = []
-    for i in range(1, 99999):
+    for i in range(1, number + 1):
         if number % i == 0:
             divisors.append(i)
     return divisors
 
+def find_gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
 number1 = 23436
-number2 = 190187200
-number3 = 380457890232
+number2 = 1901874
+number3 = 38045781
 
 divisors1 = find_divisors(number1)
 divisors2 = find_divisors(number2)
 divisors3 = find_divisors(number3)
+
+# Найдем общие делители для всех трех чисел
+common_divisors = set(divisors1) & set(divisors2) & set(divisors3)
+
+# Найдем наибольший общий делитель из общих делителей
+gcd = max(common_divisors)
 
 print("=======================================================================================================================================================")
 print(f"Делители для {number1}: {divisors1}")
@@ -21,4 +32,6 @@ print("=========================================================================
 print(f"Делители для {number3}: {divisors3}")
 print("=======================================================================================================================================================")
 
-#Сделать усложнение
+print(f"Наибольший общий делитель для чисел {number1}, {number2}, {number3}: {gcd}")
+
+# Сдать
